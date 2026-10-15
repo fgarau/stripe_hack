@@ -7,7 +7,12 @@ authors = [
     { name = "Francisco Garau", email = "francisco.garau@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "anthropic>=1.14.0",
+    "python-dotenv>=1.2.4",
+    "pyyaml>=6.0.3",
+    "stripe>=16.0.0",
+]
 
 [project.scripts]
 stripe-hack = "stripe_hack:main"

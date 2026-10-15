@@ -8,3 +8,8 @@ wheels/
 
 # Virtual environments
 .venv
+.env
+.venv/
+__pycache__/
+audit.jsonl
+suppliers.json

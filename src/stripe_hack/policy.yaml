@@ -1,0 +1,12 @@
+# Written spending policy. Enforced in code (policy.py), never by the LLM.
+currency: gbp
+per_transaction_limit: 500.00      # hard deny above this
+approval_threshold: 200.00         # human approval needed above this (up to the hard limit)
+daily_limit: 800.00                # total approved spend per UTC day
+vendor_daily_limit: 500.00         # per vendor per day
+allowed_categories: [software, cloud, office, travel]
+vendors:                           # allowlist
+  aws:        {category: cloud}
+  github:     {category: software}
+  notion:     {category: software}
+  wework:     {category: office}
